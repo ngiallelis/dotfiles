@@ -1,0 +1,48 @@
+[push]
+	default = tracking
+
+[user]
+        name = Nikos Giallelis
+        email = nigialle@gmail.com
+
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+        ui = true
+
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+[color "diff"]
+        meta = yellow
+        frag = magenta
+        old = red
+        new = green
+
+[color "status"]
+        added = green
+        changed = red
+        untracked = cyan
+
+[core]
+        autocrlf = false
+        savecrlf = false
+        editor = nano
+
+[alias]
+        pl = pull
+        pr = pull --rebase --prune
+        st = status
+        co = checkout
+        com = commit
+        ct = commit -m
+        ps = push
+        who = shortlog -s
+        lg = log
+        lc = log ORIG_HEAD.. --stat --no-merges
+        lol = log --pretty=oneline --abbrev-commit --graph --decorate
+        br = branch
